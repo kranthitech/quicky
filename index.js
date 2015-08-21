@@ -1,3 +1,3 @@
 require('./directives/dummy.directive');
-require('./directives/dummy.service');
+require('./services/dummy.service');
 module.exports = 'ngCookies';
