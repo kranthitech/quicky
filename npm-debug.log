@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'adduser' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose node symlink /usr/bin/node
+5 verbose adduser before first PUT { name: 'kranthitech',
+5 verbose adduser   password: 'XXXXX',
+5 verbose adduser   email: 'kranthitech@gmail.com',
+5 verbose adduser   _id: 'org.couchdb.user:kranthitech',
+5 verbose adduser   type: 'user',
+5 verbose adduser   roles: [],
+5 verbose adduser   date: '2015-08-21T10:49:10.980Z' }
+6 verbose url raw /-/user/org.couchdb.user:kranthitech
+7 verbose url resolving [ 'https://registry.npmjs.org/',
+7 verbose url resolving   './-/user/org.couchdb.user:kranthitech' ]
+8 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:kranthitech
+9 info trying registry request attempt 1 at 16:19:10
+10 http PUT https://registry.npmjs.org/-/user/org.couchdb.user:kranthitech
+11 http 400 https://registry.npmjs.org/-/user/org.couchdb.user:kranthitech
+12 verbose headers { 'content-type': 'application/json',
+12 verbose headers   'cache-control': 'max-age=60',
+12 verbose headers   'content-length': '57',
+12 verbose headers   'accept-ranges': 'bytes',
+12 verbose headers   date: 'Fri, 21 Aug 2015 10:49:12 GMT',
+12 verbose headers   via: '1.1 varnish',
+12 verbose headers   connection: 'keep-alive',
+12 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+12 verbose headers   'x-cache': 'MISS',
+12 verbose headers   'x-cache-hits': '0',
+12 verbose headers   'x-timer': 'S1440154151.354863,VS0,VE1614' }
+13 verbose adduser back [ [Error: Unknown error while authenticating : -/user/org.couchdb.user:kranthitech],
+13 verbose adduser   { ok: false, error: 'Unknown error while authenticating' },
+13 verbose adduser   '{"ok":false,"error":"Unknown error while authenticating"}' ]
+14 error Error: Unknown error while authenticating : -/user/org.couchdb.user:kranthitech
+14 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+14 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+14 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:123:22)
+14 error     at Request.EventEmitter.emit (events.js:98:17)
+14 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:893:14)
+14 error     at Request.EventEmitter.emit (events.js:117:20)
+14 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:844:12)
+14 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+14 error     at _stream_readable.js:919:16
+14 error     at process._tickCallback (node.js:419:13)
+15 error If you need help, you may report this *entire* log,
+15 error including the npm and node versions, at:
+15 error     <http://github.com/npm/npm/issues>
+16 error System Linux 3.13.0-62-generic
+17 error command "/usr/bin/node" "/usr/bin/npm" "adduser"
+18 error cwd /home/kranthi/FleetFoot/quicky
+19 error node -v v0.10.28
+20 error npm -v 1.4.9
+21 verbose exit [ 1, true ]

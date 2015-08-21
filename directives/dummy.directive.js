@@ -2,7 +2,7 @@
 (function(window, angular, undefined) {'use strict';
 
 
-  angular.module('quicky').directive('listView', ['dummyService', function(dummyService){
+  angular.module('quicky').directive('dummyDirective', ['dummyService', function(dummyService){
     // Runs during compile
     return {
       // name: 'dummyService',
