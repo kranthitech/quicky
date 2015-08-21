@@ -12,7 +12,7 @@
       // controller: function($scope, $element, $attrs, $transclude) {},
       // require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
       // restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
-      template: '{{hello}}- {{dummy}}',
+      template: 'Outer- {{hello}}- {{dummy}}',
       // templateUrl: '',
       // replace: true,
       // transclude: true,
@@ -21,6 +21,7 @@
         
       },
       controller:function($scope){
+        console.log('Inside controller of Dummy Directive')
         $scope.hello = 'Hello World'
         $scope.dummy = dummyService.dummyName()
       }
