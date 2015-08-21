@@ -1,7 +1,7 @@
 
 (function(window, angular, undefined) {'use strict';
 
-
+  console.log('application is coming into directive')
   angular.module('quicky',['ng']).directive('dummyDirective', ['dummyService', function(dummyService){
     // Runs during compile
     return {
