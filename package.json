@@ -1,0 +1,29 @@
+{
+  "name": "quicky",
+  "version": "1.0.0",
+  "description": "Angular Package to quickly create forms, lists and custom fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kranthitech/quicky.git"
+  },
+  "keywords": [
+    "angular",
+    "directive",
+    "form",
+    "list",
+    "table",
+    "custom",
+    "fields",
+    "inputs"
+  ],
+  "author": "Kranthi Kiran (kranthitech@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kranthitech/quicky/issues"
+  },
+  "homepage": "https://github.com/kranthitech/quicky#readme"
+}
